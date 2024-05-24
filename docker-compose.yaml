@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  web:
+    image: myphpapp
+    container_name: php_app
+    ports:
+      - "8081:80"
+    environment:
+      DB_HOST: db_instance_endpoint
+      DB_USER: db_username
+      DB_PASSWORD: db_password
+      DB_NAME: db_name
